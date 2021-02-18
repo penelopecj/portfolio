@@ -1,0 +1,16 @@
+{
+  "python.pythonPath": "/Users/penelopejungreis/.local/share/virtualenvs/sei-project-4-iqT47-8R/bin/python",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#851481",
+    "titleBar.activeBackground": "#851481",
+    "titleBar.inactiveBackground": "#851481",
+    "statusBar.foreground": "#FFF",
+    "titleBar.inactiveForeground": "#FFF",
+    "titleBar.activeForeground": "#FFF",
+  },
+  "window.title": "👩🏻‍💻 Portfolio 👩🏻‍💻",
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+}
