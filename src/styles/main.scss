@@ -2,6 +2,8 @@
 $theme-orchid: #851481;
 $theme-purple: #48194f;
 $theme-lilac: #e9e0f2;
+$theme-turquoise: #3bc7d7;
+$theme-denim: #325671;
 
 
 // REUSABLE CLASSSES
@@ -10,11 +12,34 @@ $theme-lilac: #e9e0f2;
   display: flex;
 }
 
+.code-block {
+  background-color: #cbcbcb;
+  color: rgb(41, 41, 41);
+  // background-color: #414141;
+  // color: rgb(228, 170, 61);
+  padding: 1px 4px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+
 //ONE USE CLASSES
 
-.ga-logo {
-  height: 100%;
+.small-logo {
+  height: 30px;
   width: auto;
+  padding-right: 10px;
+}
+
+.hero {
+  margin: 0 auto;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 //JSX ELEMENTS
@@ -27,18 +52,30 @@ body {
   // background-image: url('../images/code-woman.jpg');
   // background-size: cover;
   // background-repeat: repeat;
+  background-color: $theme-denim;
+ // width: 10vw;
 }
 
 main {
   width: 90%;
   margin: 0 auto;
+  padding-top: 5rem;
+  color: white;
+  
 }
 
 
 //NAV BAR COMPONENT
 nav {
   display: flex;
-  background-color: $theme-orchid;
+  align-items: center;
+  color: white;
+  background-color: $theme-turquoise;
+  box-shadow: 0 0 4px 1px $theme-turquoise;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  //border-bottom: 3px solid $theme-turquoise;
   margin: 0;
   padding: 15px;
 
@@ -52,20 +89,105 @@ nav {
     list-style-type: none;
     width: 80%;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0 auto;
+    padding: 0;
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: $theme-denim;
     font-size: 1.3rem;
+    margin: 0;
     //font-weight: bold;
   }
 }
 
+// PROJECTS
+.projects-page {
+  .project-category {
+    align-items: center;
+  }
 
-// IMAGES ON TIMELINE
+
+  figure {
+    width: 598px;
+
+    img {
+      width: 100%;
+      border-radius: 25px;
+      border: 3px solid $theme-turquoise;
+    }
+  }
+}
+
+
+// SKILLs
+.skills-page {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    //justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    margin: 20px;
+    i {
+      font-size: 40px;
+      margin-bottom: -10px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// STYLING TIMELINE
 .timeline-section {
+  article {
+    border: 1px solid rgb(196, 195, 195);
+    background-color: white;
+  }
+
+  .right-panel {
+    border-radius: 0 200px 200px 0;
+    padding: 20px;
+  }
+
+  .left-panel {
+    border-radius: 200px 0 0 200px;
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 0 20px;
+    margin: 0;
+  }
   figure {
     height: 50px;
     margin: 5px auto;
@@ -75,16 +197,6 @@ nav {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*************Timeline Section *********************/
@@ -130,8 +242,8 @@ nav {
 .container:hover {
   //color: white;
   //font-size: 1.15rem;
-  //box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.473);
-  background-color: $theme-lilac; 
+  box-shadow: 1px 1px 5px 2px rgba(130, 130, 130, 0.473);
+  //background-color: $theme-lilac; 
 }
 
 /* The circles on the timeline */
@@ -193,6 +305,19 @@ nav {
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+  .timeline-section {
+    article {
+      border: none;
+    }
+
+    .container:hover {
+      //color: white;
+      //font-size: 1.15rem;
+      box-shadow: none;
+      //background-color: $theme-lilac; 
+    }
+  }
+  
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;

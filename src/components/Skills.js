@@ -5,96 +5,124 @@ function Skills() {
 
   return (
     <>
-      <main>
+      <main className="skills-page">
         <h1>What I Do</h1>
         <h3>Technologies</h3>
         <ul>
           <li>
-            React
+            <i className="devicon-react-original"></i>
+            <p>React</p>
           </li>
           <li>
-            JavaScript
+            <i className="devicon-javascript-plain"></i>
+            <p>JavaScript</p>
           </li>
           <li>
-            Python
+            <i className="devicon-python-plain"></i>
+            <p>Python</p>
           </li>
           <li>
-            CSS3
+            <i className="devicon-css3-plain"></i> 
+            <p>CSS3</p>
           </li>
           <li>
-            HTML5
+            <i className="devicon-html5-plain"></i>
+            <p>HTML5</p>
           </li>
           <li>
-            Node.js
+            <i className="devicon-nodejs-plain"></i>
+            <p>Node.js</p>
           </li>
           <li>
-            Express.js
+            <i className="devicon-express-original"></i>
+            <p>Express.js</p>
           </li>
           <li>
-            SASS
+            <i className="devicon-mongodb-plain"></i>
+            <p>MongoDB</p>
           </li>
           <li>
-            MongoDB
+            <i className="devicon-django-plain"></i>
+            <p>Django</p>
           </li>
           <li>
-            Django
+            <i className="devicon-postgresql-plain"></i>
+            <p>PostgresSQL</p>
           </li>
           <li>
-            PostgresSQL
-          </li>
-          <li>
-            SASS
+            <i className="devicon-sass-original"></i>
+            <p>SASS</p>
           </li>
         </ul>
         <h3>Favourite Tools</h3>
         <ul>
           <li>
-            GitHub
+            <i className="devicon-github-original"></i>
+            <p>GitHub</p>
           </li>
           <li>
-            StackOverflow
+            <i className="devicon-devicon-plain"></i>
+            <p>StackOverflow</p>
           </li>
           <li>
-            MDN
+            <i className="devicon-devicon-plain"></i>
+            <p>MDN</p>
           </li>
           <li>
-            Netlify
+            <i className="devicon-devicon-plain"></i>
+            <p>Netlify</p>
           </li>
           <li>
-            Heroku
+            <i className="devicon-heroku-original"></i>
+            <p>Heroku</p>
           </li>
           <li>
-            VS Code
+            <i className="devicon-devicon-plain"></i>
+            <p>VS Code</p>
           </li>
           <li>
-            Git
+            <i className="devicon-git-plain"></i>
+            <p>Git</p>
           </li>
           <li>
-            Insomnia
+            <i className="devicon-slack-plain"></i>
+            <p>Slack</p>
           </li>
           <li>
-            TablePlus
+            <i className="devicon-devicon-plain"></i>
+            <p>Insomnia</p>
           </li>
           <li>
-            MapBox
+            <i className="devicon-devicon-plain"></i>
+            <p>TablePlus</p>
           </li>
           <li>
-            Cloudinary
+            <i className="devicon-devicon-plain"></i>
+            <p>MapBox</p>
           </li>
           <li>
-            Firebase
+            <i className="devicon-devicon-plain"></i>
+            <p>Cloudinary</p>
           </li>
           <li>
-            GIMP
+            <i className="devicon-firebase-plain"></i>
+            <p>Firebase</p>
           </li>
           <li>
-            WordPress
+            <i className="devicon-gimp-plain"></i>
+            <p>GIMP</p>
           </li>
           <li>
-            Hootsuite
+            <i className="devicon-wordpress-plain"></i>
+            <p>WordPress</p>
           </li>
           <li>
-            Google Analytics
+            <i className="devicon-devicon-plain"></i>
+            <p>Hootsuite</p>
+          </li>
+          <li>
+            <i className="devicon-google-plain"></i>
+            <p>Google Analytics</p>
           </li>
         </ul>
         <h3>Other Talents</h3>
