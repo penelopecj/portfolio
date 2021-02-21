@@ -44,7 +44,7 @@ function About() {
                 <figure>
                   <img src={piekea} alt="PIEKEA" />
                 </figure>
-                <p>Built <a href="http://piekea.herokuapp.com/" target="_blank" rel="noreferrer">PIEKEA</a>, my final project for GA&apos;s SEI. Seven days. Built a full-stack e-commerce platform using Python and Django for the back end, PostgresSQL for the database, and React for the front end. Worked with a partner sharing code through GitHub. <a href="https://github.com/penelopecj/sei-project-4" target="_blank" rel="noreferrer">README</a></p>
+                <p>Built <a href="http://piekea.herokuapp.com/" target="_blank" rel="noreferrer">PIEKEA</a>, my final project for GA&apos;s SEI. Seven days. Built a full-stack e-commerce platform using Python and Django for the back end, PostgresSQL for the database, and React for the front end. Worked with a partner sharing code through GitHub. <a href="https://github.com/penelopecj/sei-project-4" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
 
               <article className="container left-panel">
@@ -52,7 +52,7 @@ function About() {
                 <figure>
                   <img src={reimagined} alt="2020 Reimagined" />
                 </figure>
-                <p>Built <a href="http://reimagined2020.herokuapp.com/" target="_blank" rel="noreferrer">2020 REIMAGINED</a>, my third project for GA&apos;s SEI. Eight days. Group Git in a team of three to build a complete MERN full-stack website using a database of events we built in Express, a Mongo back-end, and React front-end, which allowed users to create an account and CRUD their own events. Included map view, event reviews and ratings, average ratings, and top-rated sections. <a href="https://github.com/penelopecj/sei-project-3" target="_blank" rel="noreferrer">README</a></p>
+                <p>Built <a href="http://reimagined2020.herokuapp.com/" target="_blank" rel="noreferrer">2020 REIMAGINED</a>, my third project for GA&apos;s SEI. Eight days. Group Git in a team of three to build a complete MERN full-stack website using a database of events we built in Express, a Mongo back-end, and React front-end, which allowed users to create an account and CRUD their own events. Included map view, event reviews and ratings, average ratings, and top-rated sections. <a href="https://github.com/penelopecj/sei-project-3" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
 
               <article className="container right-panel">
@@ -60,7 +60,7 @@ function About() {
                 <figure>
                   <img src={cookie} alt="Cookie Monster" />
                 </figure>
-                <p>Built <a href="https://recipe-allergies.netlify.app/" target="_blank" rel="noreferrer">CAN I EAT THIS?</a>, my second project for GA&apos;s SEI. Two days. Pair coded in a 48-hour hackathon to build a full-stack React application using an open-source recipes API. Could check any online recipe for ingredients that the user is allergic to.<a href="https://github.com/penelopecj/sei-project-2" target="_blank" rel="noreferrer">README</a></p>
+                <p>Built <a href="https://recipe-allergies.netlify.app/" target="_blank" rel="noreferrer">CAN I EAT THIS?</a>, my second project for GA&apos;s SEI. Two days. Pair coded in a 48-hour hackathon to build a full-stack React application using an open-source recipes API. Could check any online recipe for ingredients that the user is allergic to.<a href="https://github.com/penelopecj/sei-project-2" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
 
               <article className="container left-panel">
@@ -68,7 +68,7 @@ function About() {
                 <figure>
                   <img src={pacshark} alt="Pac-Shark" />
                 </figure>
-                <p>Built <a href="https://penelopecj.github.io/sei-project-1/" target="_blank" rel="noreferrer">PAC-SHARK</a>, my first project for GA&apos;s SEI. Ten days. Worked solo for one week to build a Pac-Man game using Vanilla JS, CSS, and HTML. Game included use of arrow keys, sound effects, score tracker, win and lose pages, and intelligent movement for the ghost enemies. <a href="https://github.com/penelopecj/sei-project-1" target="_blank" rel="noreferrer">README</a></p>
+                <p>Built <a href="https://penelopecj.github.io/sei-project-1/" target="_blank" rel="noreferrer">PAC-SHARK</a>, my first project for GA&apos;s SEI. Ten days. Worked solo for one week to build a Pac-Man game using Vanilla JS, CSS, and HTML. Game included use of arrow keys, sound effects, score tracker, win and lose pages, and intelligent movement for the ghost enemies. <a href="https://github.com/penelopecj/sei-project-1" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
 
               <article className="container right-panel">
@@ -92,7 +92,7 @@ function About() {
                 <figure>
                   <img src={zenith} alt="Zenith Close Residents Association" />
                 </figure>
-                <p>Built <a href="https://15zenith.co.uk/" target="_blank" rel="noreferrer">CLADDING SCANDAL</a>, an informational website to shed light on the scandal at Zenith Close. Worked for three months before and during my web development course to build a static site on Netlify using HTML, CSS, and JavaScript. This was my first website and required extensive online research on StackOverflow, W3Schools, and Codecademy in addition to the material I learned at GA. I created five pages, including interactive resident stories, a timeline of events, and a fully mobile-responsive design. <a href="https://github.com/penelopecj/15zenith" target="_blank" rel="noreferrer">README</a></p>
+                <p>Built <a href="https://15zenith.co.uk/" target="_blank" rel="noreferrer">CLADDING SCANDAL</a>, an informational website to shed light on the scandal at Zenith Close. Worked for three months before and during my web development course to build a static site on Netlify using HTML, CSS, and JavaScript. This was my first website and required extensive online research on StackOverflow, W3Schools, and Codecademy in addition to the material I learned at GA. I created five pages, including interactive resident stories, a timeline of events, and a fully mobile-responsive design. <a href="https://github.com/penelopecj/15zenith" target="_blank" rel="noreferrer"className="readme">Readme</a></p>
               </article>
 
               <article className="container left-panel">

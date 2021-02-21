@@ -13,7 +13,7 @@ $theme-denim: #325671;
 }
 
 .code-block {
-  background-color: #cbcbcb;
+  background-color: rgba(176, 241, 255, 0.4);
   color: rgb(41, 41, 41);
   // background-color: #414141;
   // color: rgb(228, 170, 61);
@@ -32,21 +32,7 @@ $theme-denim: #325671;
   padding-right: 10px;
 }
 
-.hero {
-  h1 {
-    font-size: 2rem;
-  }
-  margin: 0 auto;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
 //JSX ELEMENTS
-
 body {
   //background-color: $theme-lilac;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,7 +41,7 @@ body {
   // background-image: url('../images/code-woman.jpg');
   // background-size: cover;
   // background-repeat: repeat;
-  background-color: $theme-denim;
+  background-color: white;
  // width: 10vw;
 }
 
@@ -63,29 +49,42 @@ main {
   width: 90%;
   margin: 0 auto;
   padding-top: 5rem;
-  color: white;
+  color: black;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
 
 //NAV BAR COMPONENT
 nav {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   color: white;
-  background-color: $theme-turquoise;
-  box-shadow: 0 0 4px 1px $theme-turquoise;
+  background-color: black;
+  box-shadow: 0 0 5px 1px $theme-turquoise;
   position: fixed;
   width: 100vw;
+  z-index: 2;
   top: 0;
-  //border-bottom: 3px solid $theme-turquoise;
+  border-bottom: 1px solid $theme-turquoise;
   margin: 0;
-  padding: 15px;
+  padding: 5px 15px;
+
+  .logo {
+    p {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+  
 
   div {
     margin: 0;
@@ -102,13 +101,69 @@ nav {
     padding: 0;
   }
 
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li:hover {
+    a {
+      color: $theme-turquoise;
+    }
+    p {
+      animation-name: spin;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+    }
+  }
+
   a {
     text-decoration: none;
-    color: $theme-denim;
+    color: white;
     font-size: 1.3rem;
     margin: 0;
     //font-weight: bold;
   }
+
+  p {
+    margin-left: 5px;
+    //padding-top: 3px;
+    transform: rotate(0deg);
+    color: $theme-turquoise;
+  }
+}
+
+// HOME
+.home {
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  i {
+    font-size: 1.3rem;
+    margin-right: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $theme-denim;
+  }
+
+  a:hover {
+    color: $theme-turquoise;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
 }
 
 // PROJECTS
@@ -181,6 +236,10 @@ nav {
 
 // SKILLs
 .skills-page {
+
+  h2 {
+    font-size: 1.8rem;
+  }
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -192,14 +251,20 @@ nav {
 
   li {
     margin: 20px;
+    cursor: default;
     i {
       font-size: 40px;
       margin-bottom: -10px;
+      
     }
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  li:hover{
+    transform: scale(1.2);
   }
 }
 
@@ -222,20 +287,20 @@ nav {
 
 // STYLING TIMELINE
 .timeline-section {
-  article {
-    border: 1px solid rgb(196, 195, 195);
-    background-color: white;
-  }
+  // article {
+  //   border: 1px solid rgb(196, 195, 195);
+  //   background-color: white;
+  // }
 
-  .right-panel {
-    border-radius: 0 200px 200px 0;
-    padding: 20px;
-  }
+  // .right-panel {
+  //   border-radius: 0 200px 200px 0;
+  //   padding: 20px;
+  // }
 
-  .left-panel {
-    border-radius: 200px 0 0 200px;
-    padding: 20px;
-  }
+  // .left-panel {
+  //   border-radius: 200px 0 0 200px;
+  //   padding: 20px;
+  // }
 
   h4 {
     font-size: 1.2rem;
@@ -252,6 +317,22 @@ nav {
     img {
       height: 100%;
     }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .readme {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 1rem auto 0 auto;
   }
 }
 
@@ -296,12 +377,12 @@ nav {
   /* cursor: zoom-in; */
 }
 
-.container:hover {
+// .container:hover {
   //color: white;
   //font-size: 1.15rem;
-  box-shadow: 1px 1px 5px 2px rgba(130, 130, 130, 0.473);
+  //box-shadow: 1px 1px 5px 2px rgba(130, 130, 130, 0.473);
   //background-color: $theme-lilac; 
-}
+// }
 
 /* The circles on the timeline */
 .container::after {
@@ -407,4 +488,15 @@ nav {
     .right-panel {
       left: 0%;
     }
+}
+
+
+// ANIMATIONS
+
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(90deg) }
+  50% { transform: rotate(180deg) }
+  75% { transform: rotate(270deg) }
+  100% { transform: rotate(360deg) }
 }

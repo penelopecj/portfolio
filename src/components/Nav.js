@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/favicon.ico'
+//import logo from '../images/favicon.ico'
 
 function Nav() {
 
@@ -8,18 +8,21 @@ function Nav() {
     <nav>
       <Link to="/">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <p>Penelope</p>
         </div>
       </Link>
       <ul>
         <li> 
           <Link to="/projects">Projects</Link>
+          <p>✖︎</p>
         </li>
         <li> 
           <Link to="/skills">Skills</Link>
+          <p>✖︎</p>
         </li>
         <li> 
           <Link to="/about">About Me</Link>
+          <p>✖︎</p>
         </li>
       </ul>
     </nav>
