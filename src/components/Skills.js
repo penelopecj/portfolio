@@ -7,7 +7,7 @@ function Skills() {
     <>
       <main className="skills-page">
         <h1>What I Do</h1>
-        <h3>Technologies</h3>
+        <h2>Technologies</h2>
         <ul>
           <li>
             <i className="devicon-react-original"></i>
@@ -54,22 +54,23 @@ function Skills() {
             <p>SASS</p>
           </li>
         </ul>
-        <h3>Favourite Tools</h3>
+
+        <h2>Favourite Tools</h2>
         <ul>
           <li>
             <i className="devicon-github-original"></i>
             <p>GitHub</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">view_headline</i>
             <p>StackOverflow</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">groups</i>
             <p>MDN</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">laptop_mac</i>
             <p>Netlify</p>
           </li>
           <li>
@@ -77,7 +78,7 @@ function Skills() {
             <p>Heroku</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">code</i>
             <p>VS Code</p>
           </li>
           <li>
@@ -89,19 +90,19 @@ function Skills() {
             <p>Slack</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">album</i>
             <p>Insomnia</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">grid_on</i>
             <p>TablePlus</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">place</i>
             <p>MapBox</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">wb_cloudy</i>
             <p>Cloudinary</p>
           </li>
           <li>
@@ -117,7 +118,7 @@ function Skills() {
             <p>WordPress</p>
           </li>
           <li>
-            <i className="devicon-devicon-plain"></i>
+            <i className="material-icons">flutter_dash</i>
             <p>Hootsuite</p>
           </li>
           <li>
@@ -125,52 +126,66 @@ function Skills() {
             <p>Google Analytics</p>
           </li>
         </ul>
-        <h3>Other Talents</h3>
+        <h2>Other Talents</h2>
         <ul>
           <li>
-            Responsive Design
+            <i className="material-icons">devices_other</i>
+            <p>Responsive Design</p>
           </li>
           <li>
-            User Experience (UX)
+            <i className="material-icons">psychology</i>
+            <p>User Experience (UX)</p>
           </li>
           <li>
-            Project Management
+            <i className="material-icons">fact_check</i>
+            <p>Project Management</p>
           </li>
           <li>
-            Event Planning
+            <i className="material-icons">cake</i>
+            <p>Event Planning</p>
           </li>
           <li>
-            Public Speaking &amp; Presentations
+            <i className="material-icons">keyboard_voice</i>
+            <p>Public Speaking</p>
           </li>
           <li>
-            Giving Tours
+            <i className="material-icons">emoji_people</i>
+            <p>Giving Tours</p>
           </li>
           <li>
-            Writing
+            <i className="material-icons">keyboard</i>
+            <p>Writing</p>
           </li>
         </ul>
-        <h3>Interests</h3>
+        <h2>Interests</h2>
         <ul>
           <li>
-            Scuba Diving
+            <i className="material-icons">watch</i> 
+            <p>Scuba Diving</p>
           </li>
           <li>
-            Skiing
+            <i className="material-icons">downhill_skiing</i>
+            <p>Skiing</p>
           </li>
           <li>
-            Social Dancing
+            <i className="material-icons">escalator_warning</i>
+            <p>Social Dancing</p>
           </li>
           <li>
-            Journalism
+            <i className="material-icons">format_quote</i>
+            <p>Blogging</p>
           </li>
           <li>
-            Photo Editing
+            <i className="material-icons">photo_size_select_large</i>
+            <p>Photo Editing</p>
           </li>
           <li>
-            Cooking
+            <i className="material-icons">dinner_dining</i>
+            <p>Cooking</p>
           </li>
           <li>
-            Traveling
+            <i className="material-icons">public</i>
+            <p>Traveling</p>
           </li>
         </ul>
       </main>
