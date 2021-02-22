@@ -128,7 +128,7 @@ function About() {
                 <figure>
                   <img src={efdss} alt="Cecil Sharp House" />
                 </figure>
-                <p>Began extra part-time job working zin Venue Sales and Events at Cecil Sharp House, England’s oldest folk music venue.</p>
+                <p>Began additional part-time job working in Venue Sales and Events at Cecil Sharp House, England’s oldest folk music venue.</p>
               </article>
 
               <article className="container right-panel">
