@@ -8,23 +8,57 @@ $theme-denim: #325671;
 
 // REUSABLE CLASSSES
 
+.line-height {
+  line-height: 1.5;
+}
+
 .flex-box {
   display: flex;
 }
 
+.centered {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .code-block {
-  background-color: rgba(176, 241, 255, 0.4);
-  color: rgb(41, 41, 41);
-  // background-color: #414141;
-  // color: rgb(228, 170, 61);
-  padding: 1px 4px;
+  //background-color: rgba(176, 241, 255, 0.4);
+  //color: rgb(41, 41, 41);
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+  color: $theme-turquoise;
+  padding: 2px;
   border-radius: 7px;
   letter-spacing: 1px;
+  margin: 0 auto;
+  max-width: 500px;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 }
 
+.linked-in {
+  color: white;
+  text-decoration: none;
+  background-color: $theme-denim;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.linked-in:hover {
+  background-color: rgb(61, 106, 143);
+}
 
 //ONE USE CLASSES
+
+.bio {
+  font-size: 1.1rem;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
 
 .small-logo {
   height: 30px;
@@ -48,8 +82,9 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 4.5rem;
   color: black;
+  //background-color: $theme-lilac;
 }
 
 h1 {
@@ -138,6 +173,8 @@ nav {
 .home {
   margin: 0 auto;
   text-align: center;
+  //background-color: $theme-lilac;
+  height: 100vh;
 
   h1 {
     font-size: 2rem;
@@ -150,18 +187,43 @@ nav {
 
   a {
     text-decoration: none;
-    color: $theme-denim;
+    color: $theme-purple;
   }
 
   a:hover {
-    color: $theme-turquoise;
+    color: $theme-orchid;
+  }
+
+  .hero {
+    color: white;
+    padding: 8rem 0 3rem;
+    background-image: url('../images/anton-maksimov.jpeg');
+    margin: 0 auto;
+
+    width: 100vw;
+
+    h1 {
+      font-size: 4rem;
+      margin: 1rem auto;
+    }
+
+    h4 {
+      margin: 1rem auto;
+      font-weight: normal;
+      font-size: 2rem;
+    }
   }
 
   .contact {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    background-color: $theme-lilac;
+    padding-top: 1rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
   }
 
 }
@@ -190,9 +252,11 @@ nav {
 
   ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
+    padding: 0;
 
     li {
       font-size: 2rem;
@@ -205,6 +269,7 @@ nav {
 
       p {
         font-size: 1rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -212,6 +277,8 @@ nav {
   .project-btn-wrapper {
     display: flex;
     justify-content: space-evenly;
+    padding: 1rem 0;
+
     a {
       text-decoration: none;
       color: white;
@@ -219,16 +286,22 @@ nav {
       padding: 5px 20px;
       border-radius: 10px;
     }
+
+    a:hover {
+      background-color: rgb(83, 214, 228);
+    }
   }
 
 
   figure {
     width: 598px;
+    margin: 0 auto;
 
     img {
       width: 100%;
       border-radius: 25px;
       border: 3px solid $theme-turquoise;
+      margin: 0 auto;
     }
   }
 }
@@ -302,6 +375,11 @@ nav {
   //   padding: 20px;
   // }
 
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
   h4 {
     font-size: 1.2rem;
   }
@@ -320,8 +398,11 @@ nav {
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $theme-denim;
     font-weight: bold;
+  }
+  a:hover {
+    color: $theme-turquoise;
   }
   .readme {
     display: block;
@@ -333,6 +414,10 @@ nav {
     border-radius: 10px;
     width: 50%;
     margin: 1rem auto 0 auto;
+  }
+  .readme:hover {
+    color: white;
+    background-color: black;
   }
 }
 

@@ -20,11 +20,11 @@ function About() {
 
   return (
     <>
-      <main>
-        <h1>About Penny</h1>
-        <p>Software engineer, project coordinator, event planner, and digital marketer with 8 years experience in the performing arts industry. You can see my full professional track record on <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
-        <p>I aspire to make a positive impact through technology and to improve people&apos;s quality of life through automation. I grew up in a family of software developers and have valued solving complex problems from a young age. I have recently made a career pivot into full-stack engineering, where I hope to find new challenges, rewards, and software that will solve everyday problems for people like you and me</p>
-        <p>When not at home reading discussions on StackOverflow, I can be found in exotic lands scuba diving, skiing, and salsa dancing.</p>
+      <main className="line-height">
+        <h1>Who I Am</h1>
+        <p className="bio">Hello world! I am a dancer, turned project coordinator, turned event planner, turned digital marketer, turned software engineer with 8 years experience in the performing arts industry. You can see a brief timeline of my professional career below or the full history on <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer" className="linked-in">LinkedIn</a> ↩︎</p>
+        <p className="bio">I aspire to make a positive impact through technology and to improve people&apos;s quality of life through automation. I grew up in a family of software developers and have valued solving complex problems from a young age. I have recently made a career pivot into full-stack engineering, where I hope to find new challenges, rewards, and software that will solve everyday problems for people like you and me.</p>
+        <p className="bio">When not at home reading discussions on StackOverflow, I can be found in exotic lands scuba diving, skiing, and salsa dancing.</p>
 
         <section id="timeline">
           <section className="content timeline-section">
@@ -42,7 +42,9 @@ function About() {
               <article className="container right-panel">
                 <h4 className="bold">3rd February 2021</h4>
                 <figure>
-                  <img src={piekea} alt="PIEKEA" />
+                  <a href="http://piekea.herokuapp.com/" target="_blank" rel="noreferrer">
+                    <img src={piekea} alt="PIEKEA" />
+                  </a>
                 </figure>
                 <p>Built <a href="http://piekea.herokuapp.com/" target="_blank" rel="noreferrer">PIEKEA</a>, my final project for GA&apos;s SEI. Seven days. Built a full-stack e-commerce platform using Python and Django for the back end, PostgresSQL for the database, and React for the front end. Worked with a partner sharing code through GitHub. <a href="https://github.com/penelopecj/sei-project-4" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
@@ -50,7 +52,9 @@ function About() {
               <article className="container left-panel">
                 <h4 className="bold">15th January 2021</h4>
                 <figure>
-                  <img src={reimagined} alt="2020 Reimagined" />
+                  <a href="http://reimagined2020.herokuapp.com/" target="_blank" rel="noreferrer">
+                    <img src={reimagined} alt="2020 Reimagined" />
+                  </a>
                 </figure>
                 <p>Built <a href="http://reimagined2020.herokuapp.com/" target="_blank" rel="noreferrer">2020 REIMAGINED</a>, my third project for GA&apos;s SEI. Eight days. Group Git in a team of three to build a complete MERN full-stack website using a database of events we built in Express, a Mongo back-end, and React front-end, which allowed users to create an account and CRUD their own events. Included map view, event reviews and ratings, average ratings, and top-rated sections. <a href="https://github.com/penelopecj/sei-project-3" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
@@ -58,7 +62,9 @@ function About() {
               <article className="container right-panel">
                 <h4 className="bold">17th December 2020</h4>
                 <figure>
-                  <img src={cookie} alt="Cookie Monster" />
+                  <a href="https://recipe-allergies.netlify.app/" target="_blank" rel="noreferrer">
+                    <img src={cookie} alt="Cookie Monster" />
+                  </a>
                 </figure>
                 <p>Built <a href="https://recipe-allergies.netlify.app/" target="_blank" rel="noreferrer">CAN I EAT THIS?</a>, my second project for GA&apos;s SEI. Two days. Pair coded in a 48-hour hackathon to build a full-stack React application using an open-source recipes API. Could check any online recipe for ingredients that the user is allergic to.<a href="https://github.com/penelopecj/sei-project-2" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
@@ -66,7 +72,9 @@ function About() {
               <article className="container left-panel">
                 <h4 className="bold">15th November 2020</h4>
                 <figure>
-                  <img src={pacshark} alt="Pac-Shark" />
+                  <a href="https://penelopecj.github.io/sei-project-1/" target="_blank" rel="noreferrer">
+                    <img src={pacshark} alt="Pac-Shark" />
+                  </a>
                 </figure>
                 <p>Built <a href="https://penelopecj.github.io/sei-project-1/" target="_blank" rel="noreferrer">PAC-SHARK</a>, my first project for GA&apos;s SEI. Ten days. Worked solo for one week to build a Pac-Man game using Vanilla JS, CSS, and HTML. Game included use of arrow keys, sound effects, score tracker, win and lose pages, and intelligent movement for the ghost enemies. <a href="https://github.com/penelopecj/sei-project-1" target="_blank" rel="noreferrer" className="readme">Readme</a></p>
               </article>
@@ -90,7 +98,9 @@ function About() {
               <article className="container right-panel">
                 <h4 className="bold">31st August 2020</h4>
                 <figure>
-                  <img src={zenith} alt="Zenith Close Residents Association" />
+                  <a href="https://15zenith.co.uk/" target="_blank" rel="noreferrer">
+                    <img src={zenith} alt="Zenith Close Residents Association" />
+                  </a>
                 </figure>
                 <p>Built <a href="https://15zenith.co.uk/" target="_blank" rel="noreferrer">CLADDING SCANDAL</a>, an informational website to shed light on the scandal at Zenith Close. Worked for three months before and during my web development course to build a static site on Netlify using HTML, CSS, and JavaScript. This was my first website and required extensive online research on StackOverflow, W3Schools, and Codecademy in addition to the material I learned at GA. I created five pages, including interactive resident stories, a timeline of events, and a fully mobile-responsive design. <a href="https://github.com/penelopecj/15zenith" target="_blank" rel="noreferrer"className="readme">Readme</a></p>
               </article>
@@ -116,7 +126,7 @@ function About() {
                 <figure>
                   <img src={efdss} alt="Cecil Sharp House" />
                 </figure>
-                <p>Began working in Venue Sales and Events at Cecil Sharp House, England’s oldest folk music venue.</p>
+                <p>Began extra part-time job working zin Venue Sales and Events at Cecil Sharp House, England’s oldest folk music venue.</p>
               </article>
 
               <article className="container right-panel">
@@ -140,7 +150,7 @@ function About() {
                 <figure>
                   <img src={springs} alt="Springs Dance Company" />
                 </figure>
-                <p>Joined Springs Dance Company as Company Administrator to coordinate timetables, travel, meals, per diems, and accommodation for 3 nationally touring productions. In 2019, was promoted to Performance and Workshop Coordinator.</p>
+                <p>Joined Springs Dance Company as Company Administrator to coordinate timetables, travel, meals, per diems, and accommodation for three nationally touring productions. In 2019, was promoted to Performance and Workshop Coordinator.</p>
               </article>
 
               <article className="container left-panel">
@@ -148,7 +158,7 @@ function About() {
                 <figure>
                   <img src={roehampton} alt="University of Roehampton" />
                 </figure>
-                <p>Moved from Boston, USA to London, UK to enroll in a Masters programme.</p>
+                <p>Moved from Boston to London to enroll in a Masters programme.</p>
               </article>
 
               <article className="container right-panel">
@@ -164,7 +174,7 @@ function About() {
                 <figure>
                   <img src={wagner} alt="Wagner College" />
                 </figure>
-                <p>Graduated Summa Cum Laude (1:1) from Wagner College, the top-ranked musical theatre university in New York City, and was awarded BSc in Arts Management.</p>
+                <p>Graduated Summa Cum Laude (1:1) from Wagner College, the top-ranked musical theatre university in New York, and was awarded BSc in Arts Management.</p>
               </article>
 
               <article className="container right-panel">
@@ -180,7 +190,7 @@ function About() {
                 <figure>
                   <img src={wagner} alt="Wagner College" />
                 </figure>
-                <small>Moved from Boston to New York City and enrolled at Wagner College.</small>
+                <p>Moved from Boston to New York City and enrolled at Wagner College.</p>
               </article>
 
             </section>

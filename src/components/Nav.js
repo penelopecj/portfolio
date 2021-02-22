@@ -8,7 +8,7 @@ function Nav() {
     <nav>
       <Link to="/">
         <div className="logo">
-          <p>Penelope</p>
+          <p>CodePenny</p>
         </div>
       </Link>
       <ul>

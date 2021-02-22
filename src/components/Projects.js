@@ -2,7 +2,7 @@ import React from 'react'
 //import { Link } from 'react-router-dom'
 import GA from '../images/ga.ico'
 import logo from '../images/favicon.ico'
-import wes from '../images/wes-bos.png'
+// import wes from '../images/wes-bos.png' <-- Add this in from PC
 import piekea from '../images/piekea-home.gif'
 import reimagined from '../images/reimagined-home.gif'
 import cookie from '../images/eat-home.png'
@@ -17,7 +17,7 @@ function Projects() {
   return (
     <>
       <main className="projects-page">
-        <h1>Projects</h1>
+        <h1>What I Build</h1>
         
         <div className="project-category flex-box">
           <img className="small-logo" src={GA} alt="GA logo" />
@@ -59,7 +59,7 @@ function Projects() {
               <p>Heroku</p>
             </li>
           </ul>
-          <p>A Django, PostgresSQL, React full-stack app. My final project for General Assembly&apos;s Software Engineering Immersive.</p>
+          <p className="line-height bio">A Django, PostgresSQL, React full-stack app. My final project for General Assembly&apos;s Software Engineering Immersive.</p>
           <div className="project-btn-wrapper">
             <a href="http://piekea.herokuapp.com/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/sei-project-4" target="_blank" rel="noreferrer">Readme</a>
@@ -105,7 +105,7 @@ function Projects() {
               <p>Heroku</p>
             </li>
           </ul>
-          <p>A MERN full-stack app. My first group project for General Assembly&apos;s Software Engineering Immersive.</p>
+          <p className="line-height bio">A MERN full-stack app. My first group project for General Assembly&apos;s Software Engineering Immersive.</p>
           <div className="project-btn-wrapper">
             <a href="https://reimagined2020.herokuapp.com/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/sei-project-3" target="_blank" rel="noreferrer">Readme</a>
@@ -143,7 +143,7 @@ function Projects() {
               <p>Netlify</p>
             </li>
           </ul>
-          <p>A React app built during a 48hr hackathon. My first pair project for General Assembly&apos;s Software Engineering Immersive.</p>
+          <p className="line-height bio">A React app built during a 48hr hackathon. My first pair project for General Assembly&apos;s Software Engineering Immersive.</p>
           <div className="project-btn-wrapper">
             <a href="https://recipe-allergies.netlify.app/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/sei-project-2" target="_blank" rel="noreferrer">Readme</a>
@@ -181,7 +181,7 @@ function Projects() {
               <p>GitHub Pages</p>
             </li>
           </ul>
-          <p>A JavaScript web-based game. My first solo project for General Assembly&apos;s Software Engineering Immersive.</p>
+          <p className="line-height bio">A JavaScript web-based game. My first solo project for General Assembly&apos;s Software Engineering Immersive.</p>
           <div className="project-btn-wrapper">
             <a href="https://penelopecj.github.io/sei-project-1/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/sei-project-1" target="_blank" rel="noreferrer">Readme</a>
@@ -224,7 +224,7 @@ function Projects() {
               <p>Netlify</p>
             </li>
           </ul>
-          <p>A front-end React project. My first side project after General Assembly&apos;s Software Engineering Immersive. Currently working on adding a backend with Django and PostgresSQL.</p>
+          <p className="line-height bio">A front-end React project. My first side project after General Assembly&apos;s Software Engineering Immersive. Currently working on adding a backend with Django and PostgresSQL.</p>
           <div className="project-btn-wrapper">
             <a href="http://pennyandzac.com/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/save-the-date" target="_blank" rel="noreferrer">Readme</a>
@@ -267,23 +267,23 @@ function Projects() {
               <p>Netlify</p>
             </li>
           </ul>
-          <p>Informational website to shed light on the scandal at 15 Zenith Close. My final project for General Assembly&apos;s Front-End Web Developement course.</p>
+          <p className="line-height bio">Informational website to shed light on the scandal at 15 Zenith Close. My final project for General Assembly&apos;s Front-End Web Developement course.</p>
           <div className="project-btn-wrapper">
             <a href="https://15zenith.co.uk/" target="_blank" rel="noreferrer">Website</a>
             <a href="https://github.com/penelopecj/15Zenith" target="_blank" rel="noreferrer">Readme</a>
           </div>
         </div>
 
-        <div className="project-category flex-box">
+        {/* <div className="project-category flex-box">
           <img className="small-logo" src={wes} alt="JavaScript 30 logo" />
           <h2>JavaScript 30</h2>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <h3>name</h3>
           <h5> One day - solo - JS</h5>
-          <p>JavaScript 30.</p>
-        </div>
+          <p className="line-height bio">JavaScript 30.</p>
+        </div> */}
 
       </main>
     </>
