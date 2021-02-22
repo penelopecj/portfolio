@@ -7,7 +7,7 @@ function Home() {
     <>
       <div className="home">
         <section className="hero">
-          <h1>Penelope Jungreis</h1>
+          <h1>Penelope <span className="mind-the-gap"> </span> Jungreis</h1>
           <p className="code-block">
             &quot;Jungreis&quot; === &quot;young&quot; + &quot;rice&quot;
           </p>
@@ -15,17 +15,18 @@ function Home() {
           
         </section>
         <section className="contact">
-          <div>
+          <h2>Get In Touch</h2>
+          <div className="flex-box items-center">
             <i className="material-icons">email</i>
-            <a href="mailto:penelope.jungreis@gmail.com"> penelope.jungreis@gmail.com</a>
+            <a href="mailto:penelope.jungreis@gmail.com">penelope.jungreis@gmail.com</a>
           </div>
-          <div>
+          <div className="flex-box items-center">
             <i className="devicon-linkedin-plain"></i>
-            <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer"> linkedin.com/in/penelopejungreis</a>
+            <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer">linkedin.com/in/penelopejungreis</a>
           </div>
-          <div>
+          <div className="flex-box items-center">
             <i className="devicon-github-original"></i>
-            <a href="https://github.com/penelopecj" target="_blank" rel="noreferrer"> github.com/penelopecj</a>
+            <a href="https://github.com/penelopecj" target="_blank" rel="noreferrer">github.com/penelopecj</a>
           </div>
         </section>
 
