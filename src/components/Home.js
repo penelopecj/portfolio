@@ -12,10 +12,10 @@ function Home() {
             &quot;Jungreis&quot; === &quot;young&quot; + &quot;rice&quot;
           </p>
           <h4>Full-Stack Software Engineer</h4>
-          
+          <h2>Get In Touch</h2>
         </section>
         <section className="contact">
-          <h2>Get In Touch</h2>
+          
           <div className="flex-box items-center">
             <i className="material-icons">email</i>
             <a href="mailto:penelope.jungreis@gmail.com">penelope.jungreis@gmail.com</a>

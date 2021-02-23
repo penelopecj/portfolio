@@ -35,6 +35,14 @@ $theme-denim: #325671;
   border-radius: 10px;
 }
 
+.turquoise {
+  color: $theme-turquoise;
+}
+.turquoise:hover {
+  color: rgb(106, 233, 255);
+  transform: scale(1.1)
+}
+
 .mind-the-gap {
   margin-right: 10px;
 }
@@ -65,14 +73,15 @@ $theme-denim: #325671;
   background-color: rgb(61, 106, 143);
 }
 
-//ONE USE CLASSES
-
 .bio {
   font-size: 1.1rem;
   max-width: 850px;
   margin: 0 auto;
   margin-bottom: 1rem;
+  padding: 0 15px;
 }
+
+//ONE USE CLASSES
 
 .small-logo {
   height: 30px;
@@ -80,7 +89,13 @@ $theme-denim: #325671;
   padding-right: 10px;
 }
 
+// box model hack
+* {
+  box-sizing: border-box;
+} 
+
 //JSX ELEMENTS
+
 body {
   //background-color: $theme-lilac;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -200,12 +215,18 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
-    padding: 5px;
-    a {
-      font-size: 1.3rem;
+    padding: 5px 2px 5px 10px;
+
+    ul {
+      width: 65%;
     }
+
+    a {
+      font-size: 1.1rem;
+    }
+
     .logo p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
   }
@@ -215,9 +236,11 @@ nav {
 .home {
   margin: 0 auto;
   text-align: center;
-  //background: linear-gradient(white, $theme-orchid);
   height: 100vh;
   overflow: hidden;
+  background-image: url('../images/anton-maksimov.jpeg');
+  background-size: cover;
+  
 
   h1 {
     font-size: 2rem;
@@ -234,21 +257,21 @@ nav {
     color: $theme-purple;
     //border-bottom: 2px solid black;
     padding: 5px 5px 5px 0;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: border-bottom 1s;
     //border-radius: 0 0 5px 0;
   }
 
   a:hover {
     color: $theme-orchid;
-    border-bottom: 1px solid rgb(170, 0, 255);
+    border-bottom: 2px solid rgb(170, 0, 255);
   }
 
   .hero {
     color: white;
-    padding: 8rem 0 3rem;
-    background-image: url('../images/anton-maksimov.jpeg');
-    background-size: cover;
+    padding: 8rem 0 0;
+    // background-image: url('../images/anton-maksimov.jpeg');
+    // background-size: cover;
     margin: 0 auto;
     width: 100vw;
 
@@ -258,6 +281,21 @@ nav {
       margin: 1rem auto;
     }
 
+    h2 {
+      //background-color: black;
+      background: rgba(0, 0, 0, 0.392);
+      //border: 2px solid $theme-turquoise;
+      text-transform: uppercase;
+      color: white;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: 4rem;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+    }
+
     h4 {
       margin: 1rem auto;
       font-weight: normal;
@@ -265,29 +303,40 @@ nav {
       font-family: 'Oswald', sans-serif;
       letter-spacing: 1px;
     }
+
+    @media screen and (max-width: 950px) {
+      h1 {
+        font-size: 3rem;
+      }
+      h4 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      h1 {
+        font-size: 2.3rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+      .code-block {
+        font-size: 1.1rem;
+        width: 400px;
+      }
+    }
   }
 
   .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: $theme-lilac;
-    background: linear-gradient($theme-turquoise, $theme-orchid);
+    background: linear-gradient($theme-turquoise, $theme-denim);
+    //background: linear-gradient($theme-turquoise, $theme-orchid);
     height: 60vh;
-    //padding-top: 1rem;
+    padding-top: 1rem;
     //border-bottom: 2px solid black;
 
-    h2 {
-      background-color: $theme-denim;
-      text-transform: uppercase;
-      color: white;
-      padding: 10px 0;
-      width: 100%;
-      margin-top: 0;
-      letter-spacing: 2px;
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.5rem;
-    }
 
     div {
       letter-spacing: 1px;
@@ -300,6 +349,7 @@ nav {
 
 // PROJECTS
 .projects-page {
+  //background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,12 +358,32 @@ nav {
   .project-category {
     align-items: center;
     //border-top: 1px solid white;
-    background-color: rgba(176, 241, 255, 0.4);
-    border-radius: 50px;
-    color: rgb(47, 63, 79);
+    //background-color: rgba(176, 241, 255, 0.4);
+    //background-color: $theme-turquoise;
+    background: linear-gradient($theme-turquoise, $theme-denim);
+    //border-radius: 50px;
+    //color: rgb(47, 63, 79);
+    color: white;
+    //border: 3px solid black;
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 2px solid $theme-turquoise;
+    border-left: 2px solid #5299a072;
+    border-right: 2px solid #5299a072;
+    border-bottom: 2px solid $theme-denim;
+  }
+
+  .project {
+    display: flex;
+    background-color: white;
+    color: black;
+    margin-bottom: 2rem;
+    border-top: 1px solid $theme-denim;
+    border-left: 2px solid $theme-denim;
+    border-right: 2px solid $theme-denim;
+    border-bottom: 1px solid $theme-denim;
   }
 
   h3 {
@@ -348,32 +418,59 @@ nav {
 
   .project-btn-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1rem 0;
 
     a {
       text-decoration: none;
       color: white;
-      background-color: $theme-turquoise;
+      margin: 0 10px;
+      background: linear-gradient($theme-turquoise, $theme-denim);
+      //background-color: $theme-turquoise;
+      border-top: 2px solid $theme-turquoise;
+      border-left: 2px solid #5299a072;
+      border-right: 2px solid #5299a072;
+      border-bottom: 2px solid $theme-denim;
       padding: 5px 20px;
       border-radius: 10px;
     }
 
     a:hover {
-      background-color: rgb(83, 214, 228);
+      color: white;
+      background: linear-gradient($theme-denim, black);
+      border: 2px solid $theme-denim;
     }
+  }
+  .border {
+    border: 1px solid $theme-denim;
   }
 
 
   figure {
     width: 598px;
     margin: 0 auto;
+    
 
     img {
       width: 100%;
-      border-radius: 25px;
-      border: 3px solid $theme-turquoise;
+      //border-radius: 25px;
+      //border: 3px solid $theme-turquoise;
       margin: 0 auto;
+      border-bottom: 2px solid $theme-denim;
+    }
+  }
+}
+
+// PROJECTS PAGE MEDIA QUERIES
+@media screen and (max-width: 950px) {
+  .projects-page {
+
+    .project {
+      display: block;
+    }
+
+    figure {
+      width: 100%;
     }
   }
 }
@@ -381,7 +478,6 @@ nav {
 
 // SKILLs
 .skills-page {
-
   h2 {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
@@ -391,7 +487,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    //justify-content: space-between;
     margin: 0 auto;
     padding: 0;
   }
@@ -561,7 +656,7 @@ nav {
 
 /* Place the container to the left */
 .left-panel {
-  left: -40px;
+  left: 0;
   padding-left: 0;
 }
 
