@@ -97,14 +97,14 @@ $theme-denim: #325671;
 //JSX ELEMENTS
 
 body {
-  //background-color: $theme-lilac;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   //color: $theme-purple;
   margin: 0 auto;
   // background-image: url('../images/code-woman.jpg');
   // background-size: cover;
   // background-repeat: repeat;
-  background-color: white;
+  background-color: white; 
+  // background: linear-gradient($theme-turquoise, $theme-denim); 
  // width: 10vw;
 }
 
@@ -478,6 +478,8 @@ nav {
 
 // SKILLs
 .skills-page {
+  //color: white;
+
   h2 {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
@@ -486,6 +488,7 @@ nav {
   ul {
     display: flex;
     flex-wrap: wrap;
+    //justify-content: center;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
