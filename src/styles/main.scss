@@ -252,7 +252,7 @@ nav {
   }
 
   a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: $theme-purple;
     //border-bottom: 2px solid black;
@@ -289,7 +289,7 @@ nav {
       color: white;
       padding: 10px 0;
       width: 100%;
-      margin-top: 4rem;
+      margin-top: 8rem;
       margin-bottom: 0;
       letter-spacing: 2px;
       font-family: 'Oswald', sans-serif;
@@ -330,11 +330,13 @@ nav {
   .contact {
     display: flex;
     flex-direction: column;
+    //justify-content: center;
     align-items: center;
     background: linear-gradient($theme-turquoise, $theme-denim);
     //background: linear-gradient($theme-turquoise, $theme-orchid);
-    height: 60vh;
-    padding-top: 1rem;
+    height: 55vh;
+    padding-top: 3rem;
+    //padding-top: 1rem;
     //border-bottom: 2px solid black;
 
 
@@ -356,7 +358,6 @@ nav {
   text-align: center;
 
   .project-category {
-    align-items: center;
     //border-top: 1px solid white;
     //background-color: rgba(176, 241, 255, 0.4);
     //background-color: $theme-turquoise;
@@ -365,14 +366,28 @@ nav {
     //color: rgb(47, 63, 79);
     color: white;
     //border: 3px solid black;
-    width: 100%;
+    align-items: center;
     justify-content: center;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-top: 2px solid $theme-turquoise;
     border-left: 2px solid #5299a072;
     border-right: 2px solid #5299a072;
     border-bottom: 2px solid $theme-denim;
+
+    .project-category-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p {
+      display: block;
+      margin-top: -10px;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
   }
 
   .project {
@@ -547,10 +562,16 @@ nav {
   //   padding: 20px;
   // }
 
+  .history {
+    align-items: center;
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+
   h2 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 0;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
   }

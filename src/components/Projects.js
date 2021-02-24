@@ -2,13 +2,20 @@ import React from 'react'
 //import { Link } from 'react-router-dom'
 import GA from '../images/ga.ico'
 import logo from '../images/favicon.ico'
-// import wes from '../images/wes-bos.png' <-- Add this in from PC
+import wes from '../images/wes-bos.png'
 import piekea from '../images/piekea-home.gif'
 import reimagined from '../images/reimagined-home.gif'
 import cookie from '../images/eat-home.png'
 import shark from '../images/pac-shark-home.png'
 import wedding from '../images/wedding-home.png'
 import zenith from '../images/zenith-home.png'
+import js10 from '../images/javascript-10.png'
+import js8 from '../images/javascript-08.png'
+import js6 from '../images/javascript-06.png'
+import js5 from '../images/javascript-05.png'
+import js3 from '../images/javascript-03.png'
+import js2 from '../images/javascript-02.png'
+import js1 from '../images/javascript-01.png'
 
 
 
@@ -18,9 +25,12 @@ function Projects() {
       <main className="projects-page">
         <h1>What I Build</h1>
         
-        <div className="project-category flex-box">
-          <img className="small-logo" src={GA} alt="GA logo" />
-          <h2>Software Engineering Immersive</h2>
+        <div className="project-category">
+          <div className="project-category-title">
+            <img className="small-logo" src={GA} alt="GA logo" />
+            <h2>Software Engineering Immersive</h2>
+          </div>
+          <p>Nov 2020 - Feb 2021</p>
         </div>
 
         <section className="project">
@@ -250,9 +260,12 @@ function Projects() {
           </div>
         </section>
 
-        <div className="project-category flex-box">
-          <img className="small-logo" src={GA} alt="GA logo" />
-          <h2>Front End Web Development Course</h2>
+        <div className="project-category">
+          <div className="project-category-title">
+            <img className="small-logo" src={GA} alt="GA logo" />
+            <h2>Front End Web Development Course</h2>
+          </div>
+          <p>Jun 2020 - Sep 2020</p>
         </div>
 
         <section className="project">
@@ -297,16 +310,272 @@ function Projects() {
           </div>
         </section>
 
-        {/* <div className="project-category flex-box">
+        <div className="project-category flex-box">
           <img className="small-logo" src={wes} alt="JavaScript 30 logo" />
           <h2>JavaScript 30</h2>
-        </div> */}
+        </div>
 
-        {/* <div>
-          <h3>name</h3>
-          <h5> One day - solo - JS</h5>
-          <p className="line-height bio">JavaScript 30.</p>
-        </div> */}
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js10} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-10/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-10" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 10: Check Multiple Checkboxes</h3>
+            <p className="line-height bio">Project 10 of Wes Bos&apos; JavaScript 30 Challenge. Spent about an hour to build an email style list with ability to hold shift to check or uncheck multiple boxes. Pure vanilla JavaScript.</p>
+            <ul>
+              <li>
+                <h5>2Hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js8} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-08/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-08" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 8: Fun with HTML5 Canvas</h3>
+            <p className="line-height bio">Project 8 of Wes Bos&apos; JavaScript 30 Challenge. Spent about an hour to build an HTML canvas that allows the user to change paintbrush colour and size. Built in vanilla JS and HTML.</p>
+            <ul>
+              <li>
+                <h5>2Hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js6} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-06/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-06" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 6: City or State By Population</h3>
+            <p className="line-height bio">Project 6 of Wes Bos&apos; JavaScript 30 Challenge. Spent about an hour to build an HTML text input that matches to US city and state names and displays all matches from the API, complete with population. Built in javaScript.</p>
+            <ul>
+              <li>
+                <h5>2Hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js5} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/penny-zac-gallery/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/penny-zac-gallery" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 5: Flex Panels Image Gallery</h3>
+            <p className="line-height bio">Project 5 of Wes Bos&apos; JavaScript 30 Challenge. In a few hours used CSS and JavaScript to create a personalized interactive image grid.</p>
+            <ul>
+              <li>
+                <h5>3Hr</h5>
+                <p>Three Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js3} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-03/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-03" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 3: Scoped CSS Variables</h3>
+            <p className="line-height bio">Project 3 of Wes Bos&apos; JavaScript 30 Challenge. Around one hour to build some JS for manipulating the CSS properties of the img element.</p>
+            <ul>
+              <li>
+                <h5>2Hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js2} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-02/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-02" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 2: JS Clock</h3>
+            <p className="line-height bio">Project 2 of Wes Bos&apos; JavaScript 30 Challenge. A few hours to build timers and manipulate the CSS properties of the clock using JavaScript.</p>
+            <ul>
+              <li>
+                <h5>3Hr</h5>
+                <p>Three Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={js1} alt="project homepage" />
+            </figure> 
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/javascript-01/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/javascript-01" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Day 1: Keyboard Drum Kit</h3>
+            <p className="line-height bio">Project 1 of Wes Bos&apos; JavaScript 30 Challenge. Used HTML5 sounds and JavaScript to play the corresponding drum kit audio sounds for each key.</p>
+            <ul>
+              <li>
+                <h5>3Hr</h5>
+                <p>Three Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul> 
+          </div>
+        </section>
 
       </main>
     </>

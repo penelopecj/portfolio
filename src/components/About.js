@@ -30,7 +30,10 @@ function About() {
         </div> 
         <section id="timeline">
           <section className="content timeline-section">
-            <h2>Career History</h2>
+            <div className="history flex-box column centered">
+              <h2>Career History</h2>
+              <p>(Reverse Chronological Order)</p>
+            </div>
             <section className="timeline">
 
               <article className="container left-panel">
