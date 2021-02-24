@@ -30,9 +30,14 @@ function Nav() {
               <i className="devicon-linkedin-plain"></i>
             </a>
           </li>
-          <li> 
+          <li className="mind-the-gap"> 
             <a href="https://github.com/penelopecj" target="_blank" rel="noreferrer" className="turquoise">
               <i className="devicon-github-plain"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:penelope.jungreis@gmail.com" className="turquoise">
+              <i className="material-icons large-icon">email</i>
             </a>
           </li>
         </span>

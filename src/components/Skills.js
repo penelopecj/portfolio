@@ -78,7 +78,7 @@ function Skills() {
             <p>Heroku</p>
           </li>
           <li>
-            <i className="material-icons">code</i>
+            <i className="devicon-visualstudio-plain"></i>
             <p>VS Code</p>
           </li>
           <li>

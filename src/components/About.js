@@ -89,7 +89,7 @@ function About() {
                 <figure>
                   <img src={GeneralAssembly} alt="General Assembly" />
                 </figure>
-                <p>Enrolled on General Assembly&apos;s Software Engineering Immersive.</p>
+                <p>Enrolled on General Assembly&apos;s 12-week, full-time Software Engineering Immersive boot camp.</p>
               </article>
 
               <article className="container left-panel">

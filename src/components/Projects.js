@@ -263,7 +263,7 @@ function Projects() {
         <div className="project-category">
           <div className="project-category-title">
             <img className="small-logo" src={GA} alt="GA logo" />
-            <h2>Front End Web Development Course</h2>
+            <h2>Intro to Front End Web Development</h2>
           </div>
           <p>Jun 2020 - Sep 2020</p>
         </div>
