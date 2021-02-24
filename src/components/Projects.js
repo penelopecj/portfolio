@@ -9,6 +9,8 @@ import cookie from '../images/eat-home.png'
 import shark from '../images/pac-shark-home.png'
 import wedding from '../images/wedding-home.png'
 import zenith from '../images/zenith-home.png'
+import filmflix from '../images/filmflix.png'
+import tic from '../images/tic-tac-toe.png'
 import js10 from '../images/javascript-10.png'
 import js8 from '../images/javascript-08.png'
 import js6 from '../images/javascript-06.png'
@@ -16,6 +18,7 @@ import js5 from '../images/javascript-05.png'
 import js3 from '../images/javascript-03.png'
 import js2 from '../images/javascript-02.png'
 import js1 from '../images/javascript-01.png'
+import kitty from '../images/hello-kitty.gif'
 
 
 
@@ -213,9 +216,12 @@ function Projects() {
           </div>
         </section>
 
-        <div className="project-category flex-box">
-          <img className="small-logo" src={logo} alt="laptop Penny emoji" />
-          <h2>Personal Projects</h2>
+        <div className="project-category">
+          <div className="project-category-title">
+            <img className="small-logo" src={logo} alt="laptop Penny emoji" />
+            <h2>Personal Projects</h2>
+          </div>
+          <p>Jan 2021 - Feb 2021</p>
         </div>
 
         <section className="project">
@@ -310,9 +316,96 @@ function Projects() {
           </div>
         </section>
 
-        <div className="project-category flex-box">
-          <img className="small-logo" src={wes} alt="JavaScript 30 logo" />
-          <h2>JavaScript 30</h2>
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={filmflix} alt="project homepage" />
+            </figure>
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/filmflix/." target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/filmflix" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Week 7 Project: Filmflix</h3>
+            <p className="line-height bio">Week 7 assignment from General Assembly&apos;s Intro to Front End Web Development course. Consumed the OMDB API and used axios to retrieve films from the database. Checked the user text input against film titles to return matches. Used a for loop to set the innerHTML for each film to a list element html tag. First time using CSS animations.</p>
+            <ul>
+              <li>
+                <h5>2hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={tic} alt="project homepage" />
+            </figure>
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/tic-tac-toe/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/tic-tac-toe" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Week 10 Project: Tic Tac Toe</h3>
+            <p className="line-height bio">Week 10 assignment from General Assembly&apos;s Intro to Front End Web Development course. Used simple conditional statements to check whose turn it was and check if a player had won yet. Added CSS delays and transitions to make it more fun.</p>
+            <ul>
+              <li>
+                <h5>2hr</h5>
+                <p>Two Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div className="project-category">
+          <div className="project-category-title">
+            <img className="small-logo" src={wes} alt="JavaScript 30 logo" />
+            <h2>JavaScript 30</h2>
+          </div>
+          <p>Sep 2020 - Nov 2020</p>
         </div>
 
         <section className="project">
@@ -574,6 +667,56 @@ function Projects() {
                 <p>GitHub Pages</p>
               </li>
             </ul> 
+          </div>
+        </section>
+
+        <div className="project-category">
+          <div className="project-category-title">
+            <img className="small-logo" src={GA} alt="GA logo" />
+            <h2>Learn to Code with Dash</h2>
+          </div>
+          <p>Jan 2020</p>
+        </div>
+
+        <section className="project">
+          <div className="border">
+            <figure>
+              <img src={kitty} alt="project homepage" />
+            </figure>
+            <div className="project-btn-wrapper">
+              <a href="https://penelopecj.github.io/hello-kitty/" target="_blank" rel="noreferrer">Website</a>
+              <a href="https://github.com/penelopecj/hello-kitty" target="_blank" rel="noreferrer">Readme</a>
+            </div>
+          </div>
+          <div className="border">
+            <h3>Intro to Coding: Hello Kitty</h3>
+            <p className="line-height bio">Dash is a free online course from General Assembly that teaches you the basics of coding through five simple projects using HTML, CSS, and JavaScript. This was my first ever introduction to web development and I was very proud at the time!</p>
+            <ul>
+              <li>
+                <h5>5Hr</h5>
+                <p>Five Hours</p>
+              </li>
+              <li>
+                <i className="material-icons">person</i>
+                <p>Solo Project</p>
+              </li>
+              <li>
+                <i className="devicon-jquery-plain"></i>
+                <p>jQuery</p>
+              </li>
+              <li>
+                <i className="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <i className="devicon-html5-plain"></i>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <i className="devicon-github-original"></i>
+                <p>GitHub Pages</p>
+              </li>
+            </ul>
           </div>
         </section>
 
