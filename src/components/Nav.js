@@ -21,7 +21,7 @@ function Nav() {
           <p>Code Penny</p>
         </div>
       </Link>
-      <ul className={isOpen ? 'show-menu' : ''}>
+      <ul className={isOpen ? '' : 'hide-menu'}>
         <li className="mobile-divider"> 
           <Link to="/projects">Projects</Link>
           <p>✖︎</p>

@@ -159,19 +159,22 @@ nav {
     color: rgb(171, 171, 171);
   }
 
-  .close-btn {
+  .open-btn {
     font-size: 1.3rem;
     .line-one, .line-two, .line-three {
+      transition: 0.3s;
       transform: rotate(90deg);
     } 
   }
 
-  .open-btn {
+  .close-btn {
     font-size: 1.4rem;
     .line-one {
+      transition: 0.3s;
       transform: rotate(135deg);
     }
     .line-two {
+      transition: 0.3s;
       transform: rotate(45deg);
       margin-top: -10px;
     }
@@ -289,7 +292,7 @@ nav {
       display: block;
     }
 
-    .show-menu {
+    .hide-menu {
       display: none;
     }
 
