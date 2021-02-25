@@ -51,8 +51,6 @@ $theme-denim: #325671;
 }
 
 .code-block {
-  //background-color: rgba(176, 241, 255, 0.4);
-  //color: rgb(41, 41, 41);
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
   color: $theme-turquoise;
@@ -323,6 +321,29 @@ nav {
   }
 }
 
+@media screen and (max-width: 415px) {
+  nav {
+    .logo p {
+      font-size: 1.2rem;
+    }
+
+    .social-icons {
+      i {
+        font-size: 1.5rem;
+      }
+
+      .large-icon {
+        font-size: 1.8rem;
+      }
+      
+      position: fixed;
+      top: 5px;
+      right: 7px;
+    }
+
+  }
+}
+
 // HOME
 .home {
   margin: 0 auto;
@@ -337,30 +358,9 @@ nav {
     font-size: 2rem;
   }
 
-  i {
-    font-size: 1.5rem;
-    margin-right: 7px;
-  }
-
-  a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: $theme-purple;
-    //border-bottom: 2px solid black;
-    padding: 5px 5px 5px 0;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 1s;
-    //border-radius: 0 0 5px 0;
-  }
-
-  a:hover {
-    color: $theme-orchid;
-    border-bottom: 2px solid rgb(170, 0, 255);
-  }
-
   .hero {
     color: white;
-    padding: 8rem 0 0;
+    padding: 8rem 0 0 0;
     // background-image: url('../images/anton-maksimov.jpeg');
     // background-size: cover;
     margin: 0 auto;
@@ -395,6 +395,8 @@ nav {
       letter-spacing: 1px;
     }
 
+    // HERO MEDIA QUERIES
+
     @media screen and (max-width: 950px) {
       h1 {
         font-size: 3rem;
@@ -416,25 +418,82 @@ nav {
         width: 400px;
       }
     }
+
+    @media screen and (max-width: 472px) {
+      padding-top: 5rem;
+
+      h2 {
+        margin-top: 3rem;
+      }
+
+      .code-block {
+        font-size: 1rem;
+        width: 350px;
+      }
+
+    }
   }
+
+
 
   .contact {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
     background: linear-gradient($theme-turquoise, $theme-denim);
-    //background: linear-gradient($theme-turquoise, $theme-orchid);
     height: 55vh;
     padding-top: 3rem;
-    //padding-top: 1rem;
-    //border-bottom: 2px solid black;
-
 
     div {
       letter-spacing: 1px;
       font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
       margin-bottom: 1.5rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin-right: 7px;
+    }
+  
+    a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: $theme-purple;
+      //border-bottom: 2px solid black;
+      padding: 5px 0 5px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 1s;
+      //border-radius: 0 0 5px 0;
+    }
+  
+    a:hover {
+      color: $theme-orchid;
+      border-bottom: 2px solid rgb(170, 0, 255);
+    }
+    
+    // CONTACT SECTION MEDIA QUERIES
+    @media screen and (max-width: 472px) {
+      padding-top: 1rem;
+
+      div {
+        letter-spacing: 0;
+      }
+
+      i {
+        font-size: 1.3rem;
+        margin-right: 6px;
+      }
+    
+      a {
+        font-size: 1rem;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    
+      a:hover {
+        color: $theme-purple;
+        border-bottom: none;
+      }
     }
   }
 
