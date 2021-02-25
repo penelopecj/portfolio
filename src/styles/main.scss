@@ -82,6 +82,13 @@ $theme-denim: #325671;
   padding: 0 15px;
 }
 
+@media screen and (max-width: 472px) {
+  .bio {
+    font-size: 1rem;
+  }
+
+}
+
 //ONE USE CLASSES
 
 .small-logo {
@@ -99,14 +106,8 @@ $theme-denim: #325671;
 
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  //color: $theme-purple;
   margin: 0 auto;
-  // background-image: url('../images/code-woman.jpg');
-  // background-size: cover;
-  // background-repeat: repeat;
   background-color: white; 
-  // background: linear-gradient($theme-turquoise, $theme-denim); 
- // width: 10vw;
 }
 
 main {
@@ -670,11 +671,12 @@ nav {
   li {
     margin: 20px;
     cursor: default;
+
     i {
       font-size: 40px;
       margin-bottom: -10px;
-      
     }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -686,39 +688,38 @@ nav {
   }
 }
 
+// SKILLS PAGE MEDIA QUERIES 
+@media screen and (max-width: 472px) {
+  .skills-page {
 
+    h2 {
+      margin-bottom: 0.7rem;
+    }
+  
+    li {
+      margin: 10px 15px;
+      cursor: default;
+  
+      i {
+        font-size: 35px;
+      }
 
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  
+    li:hover{
+      transform: scale(1);
+    }
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
 // STYLING TIMELINE
 .timeline-section {
-  // article {
-  //   border: 1px solid rgb(196, 195, 195);
-  //   background-color: white;
-  // }
-
-  // .right-panel {
-  //   border-radius: 0 200px 200px 0;
-  //   padding: 20px;
-  // }
-
-  // .left-panel {
-  //   border-radius: 200px 0 0 200px;
-  //   padding: 20px;
-  // }
 
   .history {
     align-items: center;
@@ -923,6 +924,20 @@ nav {
     .right-panel {
       left: 0%;
     }
+}
+
+// ABOUT ME PAGE MEDIA QUERIES
+@media screen and (max-width: 472px) {
+
+  .black-border h1 {
+    margin-bottom: 0;
+  }
+
+  .timeline-section p {
+      font-size: 1rem;
+      padding: 0;
+    }
+
 }
 
 

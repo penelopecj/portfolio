@@ -22,7 +22,7 @@ function About() {
     <>
       <main className="line-height">
       
-        <div className="black-border bio">
+        <div className="black-border">
           <h1>Who I Am</h1>
           <p className="bio">Hello world! I am a dancer, turned project coordinator, turned event planner, turned digital marketer, turned software engineer with 8 years experience in the performing arts industry. You can see a brief timeline of my professional career below or the full history on <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer" className="linked-in">LinkedIn</a> ↩︎</p>
           <p className="bio">I aspire to make a positive impact through technology and to improve people&apos;s quality of life through automation. I grew up in a family of software developers and have valued solving complex problems from a young age. I have recently made a career pivot into full-stack engineering, where I hope to find new challenges, rewards, and software that will solve everyday problems for people like you and me.</p>
