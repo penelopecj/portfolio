@@ -48,7 +48,7 @@ function Projects() {
           </div>
           <div className="border">
             <h3>Project 4: PIEKEA</h3>
-            <p className="line-height bio">My final project for General Assembly&apos;s Software Engineering Immersive. Seven days. Built a full-stack e-commerce platform using Python and Django for the back end, PostgresSQL for the database, and React for the front end. Worked with a partner sharing code through GitHub.</p>
+            <p className="line-height bio">My final project for General Assembly&apos;s Software Engineering Immersive. Seven days. Built a full-stack e-commerce platform using Python and Django for the back end, PostgresSQL for the database, and React for the front end. Worked with a partner sharing code through GitHub. Please note, this project uses a free server and you will need to wait a minute or two for the website to wake up!</p>
             <ul>
               <li>
                 <h5>1W</h5>
@@ -94,7 +94,7 @@ function Projects() {
           </div>
           <div className="border">
             <h3>Project 3: 2020 Reimagined</h3>
-            <p className="line-height bio">My first group project for General Assembly&apos;s Software Engineering Immersive. Eight days. Group Git in a team of three to build a complete MERN full-stack website using a database of events we built in Express, a Mongo back-end, and React front-end, which allowed users to create an account and CRUD their own events. Included map view, event reviews and ratings, average ratings, and top-rated sections.</p>
+            <p className="line-height bio">My first group project for General Assembly&apos;s Software Engineering Immersive. Eight days. Group Git in a team of three to build a complete MERN full-stack website using a database of events we built in Express, a Mongo back-end, and React front-end, which allowed users to create an account and CRUD their own events. Included map view, event reviews and ratings, average ratings, and top-rated sections. Please note, this project uses a free server and you will need to wait a minute or two for the website to wake up!</p>
             <ul>
               <li>
                 <h5>9D</h5>
