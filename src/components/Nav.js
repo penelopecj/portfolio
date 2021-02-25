@@ -23,15 +23,24 @@ function Nav() {
       </Link>
       <ul className={isOpen ? '' : 'hide-menu'}>
         <li className="mobile-divider"> 
-          <Link to="/projects">Projects</Link>
+          <Link 
+            to="/projects" 
+            onClick={handleMenuToggle}
+          >Projects</Link>
           <p>✖︎</p>
         </li>
         <li className="mobile-divider"> 
-          <Link to="/skills">Skills</Link>
+          <Link 
+            to="/skills"
+            onClick={handleMenuToggle}
+          >Skills</Link>
           <p>✖︎</p>
         </li>
         <li className="mobile-divider"> 
-          <Link to="/about">About Me</Link>
+          <Link 
+            to="/about"
+            onClick={handleMenuToggle}
+          >About Me</Link>
           <p>✖︎</p>
         </li>
       </ul>

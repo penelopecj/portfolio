@@ -9,7 +9,7 @@ function Home() {
         <section className="hero">
           <h1>Penelope <span className="mind-the-gap"> </span> Jungreis</h1>
           <p className="code-block">
-            &quot;Jungreis&quot; === &quot;young&quot; + &quot;rice&quot;
+            &apos;Jungreis&apos; === &apos;young&apos; + &apos;rice&apos;
           </p>
           <h4>Full-Stack Software Engineer</h4>
           <h2>Get In Touch</h2>
