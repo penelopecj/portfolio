@@ -126,7 +126,11 @@ h1 {
   font-family: 'Squada One', cursive;
 }
 
-
+h2 {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
 
 //NAV BAR COMPONENT
 nav {
@@ -383,7 +387,6 @@ nav {
       margin-top: 8rem;
       margin-bottom: 0;
       letter-spacing: 2px;
-      font-family: 'Oswald', sans-serif;
       font-size: 1.5rem;
     }
 
@@ -501,30 +504,19 @@ nav {
 
 // PROJECTS
 .projects-page {
-  //background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
   .project-category {
-    //border-top: 1px solid white;
-    //background-color: rgba(176, 241, 255, 0.4);
-    //background-color: $theme-turquoise;
     background: linear-gradient($theme-turquoise, $theme-denim);
-    //border-radius: 50px;
-    //color: rgb(47, 63, 79);
     color: white;
-    //border: 3px solid black;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border-top: 2px solid $theme-turquoise;
-    border-left: 2px solid #5299a072;
-    border-right: 2px solid #5299a072;
-    border-bottom: 2px solid $theme-denim;
 
     .project-category-title {
       display: flex;
@@ -591,19 +583,13 @@ nav {
       color: white;
       margin: 0 10px;
       background: linear-gradient($theme-turquoise, $theme-denim);
-      //background-color: $theme-turquoise;
-      border-top: 2px solid $theme-turquoise;
-      border-left: 2px solid #5299a072;
-      border-right: 2px solid #5299a072;
-      border-bottom: 2px solid $theme-denim;
-      padding: 5px 20px;
+      padding: 7px 22px;
       border-radius: 10px;
     }
 
     a:hover {
       color: white;
       background: linear-gradient($theme-denim, black);
-      border: 2px solid $theme-denim;
     }
   }
   .border {
@@ -618,8 +604,6 @@ nav {
 
     img {
       width: 100%;
-      //border-radius: 25px;
-      //border: 3px solid $theme-turquoise;
       margin: 0 auto;
       border-bottom: 2px solid $theme-denim;
     }
@@ -640,16 +624,20 @@ nav {
   }
 }
 
+@media screen and (max-width: 472px) {
+  .projects-page {
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 1rem;
+    }
+  }
+}
+
 
 // SKILLs
 .skills-page {
-  //color: white;
 
-  h2 {
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-  }
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -719,11 +707,8 @@ nav {
   }
 
   h2 {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 0;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
   }
   h4 {
     font-size: 1.2rem;
@@ -921,8 +906,25 @@ nav {
 }
 
 
-// ANIMATIONS
+// UNIVERSAL MEDIA QUERIES
+@media screen and (max-width: 472px) {
+  main {
+    padding-top: 4rem;
+    width: 93%;
 
+    h1 {
+      font-size: 2rem;
+      margin-bottom: -10px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+
+// ANIMATIONS
 @keyframes spin {
   0% { transform: rotate(0deg) }
   25% { transform: rotate(90deg) }
