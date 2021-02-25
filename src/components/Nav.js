@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom'
 //import logo from '../images/favicon.ico'
 
 function Nav() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  //const { pathname } = useLocation()
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+  // React.useEffect(() => {
+  //   setIsOpen(false)
+  // }, [pathname])
 
   return (
     <nav>
@@ -11,37 +21,45 @@ function Nav() {
           <p>Code Penny</p>
         </div>
       </Link>
-      <ul>
-        <li> 
+      <ul className={isOpen ? 'show-menu' : ''}>
+        <li className="mobile-divider"> 
           <Link to="/projects">Projects</Link>
           <p>✖︎</p>
         </li>
-        <li> 
+        <li className="mobile-divider"> 
           <Link to="/skills">Skills</Link>
           <p>✖︎</p>
         </li>
-        <li> 
+        <li className="mobile-divider"> 
           <Link to="/about">About Me</Link>
           <p>✖︎</p>
         </li>
-        <span className="flex-box">
-          <li className="mind-the-gap"> 
-            <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer" className="turquoise">
-              <i className="devicon-linkedin-plain"></i>
-            </a>
-          </li>
-          <li className="mind-the-gap"> 
-            <a href="https://github.com/penelopecj" target="_blank" rel="noreferrer" className="turquoise">
-              <i className="devicon-github-plain"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:penelope.jungreis@gmail.com" className="turquoise">
-              <i className="material-icons large-icon">email</i>
-            </a>
-          </li>
-        </span>
       </ul>
+      <div className="flex-box social-icons">
+        <li className="mind-the-gap"> 
+          <a href="https://www.linkedin.com/in/penelopejungreis/" target="_blank" rel="noreferrer" className="turquoise">
+            <i className="devicon-linkedin-plain"></i>
+          </a>
+        </li>
+        <li className="mind-the-gap"> 
+          <a href="https://github.com/penelopecj" target="_blank" rel="noreferrer" className="turquoise">
+            <i className="devicon-github-plain"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:penelope.jungreis@gmail.com" className="turquoise">
+            <i className="material-icons large-icon">email</i>
+          </a>
+        </li>
+        <li>     
+          <span 
+            onClick={handleMenuToggle} 
+            className={`navbar-burger ${isOpen ? 'close-btn' : 'open-btn'}`}
+          >
+            ◉
+          </span>
+        </li>
+      </div>
     </nav>
   )
 }
