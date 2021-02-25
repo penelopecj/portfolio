@@ -945,6 +945,18 @@ nav {
 
 }
 
+// FOOTER PAGE
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $theme-denim;
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+// FOOTER PAGE MEDIA QUERIES
+
 
 // UNIVERSAL MEDIA QUERIES
 @media screen and (max-width: 472px) {
