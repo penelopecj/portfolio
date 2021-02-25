@@ -245,7 +245,15 @@ nav {
 }
 
 // NAV BAR MEDIA QUERIES
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1245px) {
+  nav {
+    ul {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
   nav {
     ul {
       width: 50%;
@@ -258,21 +266,20 @@ nav {
     padding: 5px 2px 5px 10px;
 
     a {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
 
     .logo p {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
 
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   nav {
     padding: 5px 10px;
     display: block;
-
 
     .close-btn {
       display: block;
@@ -301,8 +308,9 @@ nav {
     }
 
     .logo p {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
+
     .social-icons {
       position: fixed;
       top: 5px;
