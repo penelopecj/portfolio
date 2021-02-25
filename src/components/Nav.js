@@ -46,18 +46,20 @@ function Nav() {
             <i className="devicon-github-plain"></i>
           </a>
         </li>
-        <li>
+        <li className="mind-the-gap">
           <a href="mailto:penelope.jungreis@gmail.com" className="turquoise">
             <i className="material-icons large-icon">email</i>
           </a>
         </li>
         <li>     
-          <span 
+          <div 
             onClick={handleMenuToggle} 
-            className={`navbar-burger ${isOpen ? 'close-btn' : 'open-btn'}`}
+            className={`toggle-btn ${isOpen ? 'close-btn' : 'open-btn'}`}
           >
-            ◉
-          </span>
+            <div className="line-one">|</div>
+            <div className="line-two">|</div>
+            <div className="line-three">|</div>
+          </div>
         </li>
       </div>
     </nav>

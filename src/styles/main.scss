@@ -144,18 +144,40 @@ nav {
   top: 0;
   border-bottom: 1px solid $theme-turquoise;
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 10px 5px 15px;
 
-  .close-btn {
+
+  .toggle-btn {
     display: none;
     cursor: pointer;
-    color: yellowgreen;
+    margin: 0 5px;
+    font-weight: bold;
+    line-height: 0.35;
+  }
+
+  .toggle-btn:hover {
+    color: rgb(171, 171, 171);
+  }
+
+  .close-btn {
+    font-size: 1.3rem;
+    .line-one, .line-two, .line-three {
+      transform: rotate(90deg);
+    } 
   }
 
   .open-btn {
-    display: none;
-    cursor: pointer;
-    color: orangered;
+    font-size: 1.4rem;
+    .line-one {
+      transform: rotate(135deg);
+    }
+    .line-two {
+      transform: rotate(45deg);
+      margin-top: -10px;
+    }
+    .line-three {
+      display: none;
+    } 
   }
 
   .logo {
@@ -226,7 +248,7 @@ nav {
 @media screen and (max-width: 1220px) {
   nav {
     ul {
-      width: 10%;
+      width: 50%;
     }
   }
 }
@@ -234,10 +256,6 @@ nav {
 @media screen and (max-width: 800px) {
   nav {
     padding: 5px 2px 5px 10px;
-
-    ul {
-      width: 65%;
-    }
 
     a {
       font-size: 1.1rem;
