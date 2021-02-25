@@ -1,18 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-//import logo from '../images/favicon.ico'
 
 function Nav() {
   const [isOpen, setIsOpen] = React.useState(false)
-  //const { pathname } = useLocation()
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen)
   }
-
-  // React.useEffect(() => {
-  //   setIsOpen(false)
-  // }, [pathname])
 
   return (
     <nav>
@@ -26,22 +20,29 @@ function Nav() {
           <Link 
             to="/projects" 
             onClick={handleMenuToggle}
-          >Projects</Link>
-          <p>✖︎</p>
+          >
+            <span>Projects</span>
+            <p>✖︎</p>
+          </Link>
+          
         </li>
         <li className="mobile-divider"> 
           <Link 
             to="/skills"
             onClick={handleMenuToggle}
-          >Skills</Link>
-          <p>✖︎</p>
+          >
+            <span>Skills</span>
+            <p>✖︎</p>
+          </Link>
         </li>
         <li className="mobile-divider"> 
           <Link 
             to="/about"
             onClick={handleMenuToggle}
-          >About Me</Link>
-          <p>✖︎</p>
+          >
+            <span>About Me</span>
+            <p>✖︎</p>
+          </Link>
         </li>
       </ul>
       <div className="flex-box social-icons">

@@ -192,6 +192,9 @@ nav {
   }
 
   .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     p {
       font-family: 'Monoton', cursive;
       color: white;
@@ -240,18 +243,25 @@ nav {
     font-family: 'Squada One', cursive;
     font-size: 1.7rem;
     margin: 0;
+
+    p {
+      font-size: 1rem;
+      margin-left: 5px;
+      //padding-top: 3px;
+      transform: rotate(0deg);
+      color: $theme-turquoise;
+    }
     //font-weight: bold;
+  }
+
+  li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   i {
     font-size: 1.7rem;
-  }
-
-  p {
-    margin-left: 5px;
-    //padding-top: 3px;
-    transform: rotate(0deg);
-    color: $theme-turquoise;
   }
 }
 
