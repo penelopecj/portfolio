@@ -86,6 +86,14 @@ function Skills() {
             <p>Git</p>
           </li>
           <li>
+            <i className="devicon-npm-original-wordmark"></i>
+            <p>NPM</p>
+          </li>
+          <li>
+            <i className="devicon-yarn-plain"></i>
+            <p>Yarn</p>
+          </li>
+          <li>
             <i className="devicon-slack-plain"></i>
             <p>Slack</p>
           </li>

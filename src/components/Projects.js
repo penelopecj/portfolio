@@ -236,7 +236,7 @@ function Projects() {
           </div>
           <div className="border">
             <h3>Save the Date</h3>
-            <p className="line-height bio">A front-end React project. My first side project after General Assembly&apos;s Software Engineering Immersive. Currently working on adding a backend with Django and PostgresSQL.</p>
+            <p className="line-height bio">A single-page web application built in React. My first side project after General Assembly&apos;s Software Engineering Immersive. I am currently working on adding a backend with Django and a PostgresSQL database that will store user account information, RSVP details, and dietary requests.</p>
             <ul>
               <li>
                 <h5>??</h5>
