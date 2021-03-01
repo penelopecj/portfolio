@@ -37,7 +37,7 @@ function Projects() {
         </div>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={piekea} alt="project homepage" />
             </figure> 
@@ -83,7 +83,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={reimagined} alt="project homepage" />
             </figure> 
@@ -133,7 +133,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={cookie} alt="project homepage" />
             </figure> 
@@ -175,7 +175,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={shark} alt="project homepage" />
             </figure> 
@@ -225,7 +225,7 @@ function Projects() {
         </div>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={wedding} alt="project homepage" />
             </figure> 
@@ -275,7 +275,7 @@ function Projects() {
         </div>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={zenith} alt="project homepage" />
             </figure>
@@ -317,7 +317,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={filmflix} alt="project homepage" />
             </figure>
@@ -359,7 +359,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={tic} alt="project homepage" />
             </figure>
@@ -409,7 +409,7 @@ function Projects() {
         </div>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js10} alt="project homepage" />
             </figure> 
@@ -443,7 +443,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js8} alt="project homepage" />
             </figure> 
@@ -481,7 +481,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js6} alt="project homepage" />
             </figure> 
@@ -519,7 +519,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js5} alt="project homepage" />
             </figure> 
@@ -557,7 +557,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js3} alt="project homepage" />
             </figure> 
@@ -595,7 +595,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js2} alt="project homepage" />
             </figure> 
@@ -633,7 +633,7 @@ function Projects() {
         </section>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={js1} alt="project homepage" />
             </figure> 
@@ -679,7 +679,7 @@ function Projects() {
         </div>
 
         <section className="project">
-          <div className="border">
+          <div>
             <figure>
               <img src={kitty} alt="project homepage" />
             </figure>

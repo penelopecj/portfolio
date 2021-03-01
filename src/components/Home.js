@@ -11,7 +11,7 @@ function Home() {
           <p className="code-block">
             &apos;Jungreis&apos; === &apos;young&apos; + &apos;rice&apos;
           </p>
-          <h4>Full-Stack Software Engineer</h4>
+          <h4>London-Based Fullstack Software Engineer</h4>
           <h2>Get In Touch</h2>
         </section>
         <section className="contact">
